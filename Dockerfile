@@ -4,7 +4,9 @@ FROM alpine
 
 #download and install dependencies
 
-Run apk add --update redis
+RUN apk add --update redis
+
+RUN apk add --update gcc
 
 #tell  the image what to do when it starts
 
